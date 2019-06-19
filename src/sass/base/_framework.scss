@@ -1,0 +1,112 @@
+/* ==========================================================================
+ INIAL RESETS
+========================================================================== */
+/* See Normalize for addition resets and set-ups */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+ }
+
+ /* ==========================================================================
+  ONE WAY MARGINS
+ ========================================================================== */
+
+ p, h1, h2, h3, h4, h5, h6, hgroup, dd, figure, pre, table, fieldset, legend, hr, time {
+  @apply mb-6; //1.5rem
+ }
+
+ /* ==========================================================================
+  FORM INPUT RESETS
+ ========================================================================== */
+
+label,
+input,
+textarea,
+button,
+select,
+option,
+{
+  cursor:pointer;
+  border-radius:0;
+  outline:none;
+  -webkit-appearance: none;
+}
+
+input,
+textarea {
+   &:hover {
+    cursor:text;
+    outline:none;
+  }
+}
+
+ /* ==========================================================================
+  MAIN FRAMEWORK DOCUMENT SETUP
+ ========================================================================== */
+
+html {
+  height:100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body
+{
+  // @apply .font-sans;
+  @apply .text-gray-600;
+  -webkit-font-smoothing: antialiased;
+  font-weight:400;
+  margin:0 auto;
+  height:100%;
+}
+
+.container {
+  @apply .max-w-8xl;
+  @apply .mx-auto;
+  @apply .px-6;
+}
+
+/* ==========================================================================
+  BASE STYLES
+========================================================================== */
+
+h1, h2, h3, h4, h5, h6, p, li {
+  line-height: 1.5;
+}
+
+// strong {
+//   @apply .font-semibold;
+// }
+
+/* ==========================================================================
+  HR RULES
+========================================================================== */
+
+hr {
+  @apply .border-gray-400;
+  @apply .border-t;
+  clear: both;
+  height: 0;
+}
+
+/* ==========================================================================
+   SELECTION STYLING
+========================================================================== */
+/* This is used to change the highlight colour when selecting text.
+ * Nice bespoke touch to websites.
+ * Full article here: http://davidwalsh.name/css-selection
+ */
+
+::-moz-selection {
+  @apply .text-white;
+  // @apply .bg-blue;
+  text-shadow: none;
+}
+
+::selection {
+  @apply .text-white;
+  // @apply .bg-blue;
+  text-shadow: none;
+}

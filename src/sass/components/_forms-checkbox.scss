@@ -1,0 +1,23 @@
+/* ==========================================================================
+	RAADIO BUTTON STYLES
+========================================================================== */
+
+
+input[type="checkbox"] + label span {
+  transition: background .2s,
+  transform .2s;
+}
+
+input[type="checkbox"] + label span:hover,
+input[type="checkbox"] + label:hover span {
+  transform: scale(1.2);
+}
+
+input[type="checkbox"]:checked + label span {
+  @apply .bg-green;
+  box-shadow: 0px 0px 0px 2px white inset;
+}
+
+input[type="checkbox"]:checked + label {
+  @apply .text-green;
+}

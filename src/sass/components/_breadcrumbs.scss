@@ -1,0 +1,19 @@
+/* ==========================================================================
+  BREADCRUMS
+========================================================================== */
+
+.breadcrumbs {
+  &:before {
+    content: 'You are in:';
+    color: currentColor;
+  }
+
+  li:not(:last-child) {
+    &:after {
+      content: '/';
+      color: currentColor;
+      @apply mx-3;
+    }
+  }
+
+}

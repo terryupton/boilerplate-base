@@ -1,0 +1,17 @@
+/* ==========================================================================
+  MAP STYLES
+========================================================================== */
+
+.map {
+  width: 100%;
+  min-height: 400px;
+  //@apply .mx-auto
+
+  img {
+    max-width: inherit;
+  }
+}
+
+.map img[src="/assets/img/logo-wm.svg"] {
+  @apply p-1 rounded-full;
+}

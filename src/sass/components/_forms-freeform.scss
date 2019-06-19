@@ -1,0 +1,49 @@
+/* ==========================================================================
+	BASE FREEFORM STYLES
+========================================================================== */
+
+.freeform-column {
+  min-width: 120px;
+}
+
+.freeform-required:before {
+  content: "*";
+  @apply .mr-px;
+  display: inline-block;
+}
+
+//POSITION STYLES
+//==========================================================================//
+
+
+.freeform-column-content-align-left {
+  @apply .flex .justify-start;
+
+  > button:not(:first-of-type) {
+    @apply .ml-1;
+  }
+}
+
+.freeform-column-content-align-center {
+  @apply .flex .justify-center;
+
+  > button:not(:first-of-type) {
+    @apply .ml-1;
+  }
+}
+
+.freeform-column-content-align-right {
+  @apply .flex .justify-end;
+
+  > button:not(:first-of-type) {
+    @apply .ml-1;
+  }
+}
+
+.freeform-column-content-align-spread {
+  @apply .flex .justify-between;
+
+  > button:not(:first-of-type) {
+    @apply .ml-1;
+  }
+}

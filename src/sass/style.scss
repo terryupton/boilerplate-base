@@ -1,0 +1,59 @@
+//-------------------------------------------------------------------------------
+// Initial setup to import all our SASS based files and tailwind files.
+//---------------------------------------------------------------------------------
+@tailwind base;
+@import "base/_framework";
+@import "base/_typography";
+@import "base/_links";
+@import "base/_images";
+// @import "base/_helpers";
+//@import "base/_print";
+
+// COMPONENTS
+//@import "components/_animations";
+//@import 'node_modules/animate.css/animate';
+//@import "components/_breadcrumbs";
+//@import "components/_bullets";
+//@import "components/_contact";
+//@import "components/_nav";
+//@import "components/_social-media"
+
+// HTML COMPONENTS
+//@import "components/_blockquote";
+//@import "components/_tables";
+
+// MEDIA
+//@import "components/_video";
+//@import "components/_map";
+
+//FORMS
+//@import "components/_forms";
+//@import "components/_forms-radio-buttons";
+//@import "components/_forms-checkbox";
+//@import "components/_forms-select";
+//@import "components/_forms-yoko";
+//@import "components/_forms-freeform";
+
+
+//-------------------------------------------------------------------------------
+///VENDORS
+//-------------------------------------------------------------------------------
+// FLICKITY
+//@import 'node_modules/flickity/css/flickity';
+//@import "components/_carousel";
+
+//BAGUETTE BOX
+//@import 'vendors/baguetteBox';
+//@import '~baguettebox.js/dist/baguetteBox.min.css';
+
+// HAMBURGERS
+//@import "vendors/hamburgers/hamburgers";
+
+// HOVER
+//@import 'node_modules/hover.css/hover';
+
+// DEBUG
+//@import "base/_debug";
+
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,70 @@
+/* ==========================================================================
+	 IMAGES
+========================================================================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  font-style:italic;
+  /*So that `alt` text is visually offset if images don’t load */
+}
+
+/**
+ * Non-fluid images if you specify 'width' and/or 'height' attributes.
+ */
+img[width],
+img[height]{
+	max-width:none;
+}
+
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+/* ==========================================================================
+   SVG
+========================================================================== */
+
+.svg-baseline svg {
+  display: inline-flex;
+  align-self: center;
+  top: .125em;
+  position: relative;
+}
+
+/* ==========================================================================
+   FIGURES
+========================================================================== */
+figure {
+  position: relative;
+}
+
+
+/* ==========================================================================
+   LAZY IMAGES
+========================================================================== */
+
+//img[data-sizes="auto"] {
+//  display: block;
+//  width: 100%;
+//}
+
+.lazyload {
+  opacity: 0;
+
+  .no-js & {
+    display: none;
+  }
+}
+
+.lazyloading {
+  opacity: 0.25;
+}
+
+.lazyloaded {
+  will-change:opacity;
+  transition: opacity 400ms ease-in;
+}

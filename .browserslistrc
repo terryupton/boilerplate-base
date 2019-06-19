@@ -1,0 +1,6 @@
+# Browsers we support via Babel, Autoprefixer etc.
+               # https://github.com/ai/browserslist
+
+               >1% in GB
+               # not ie <= 10
+               not op_mini all

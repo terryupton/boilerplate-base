@@ -1,0 +1,130 @@
+/* ==========================================================================
+	YOKO ANIMATED LABEL FORM STYLES
+========================================================================== */
+
+.input__field--yoko {
+  width: 100%;
+  transition: background-color 0.25s, border-color 0.25s;
+
+  &::placeholder {
+    @apply .text-white;
+    @apply .text-sm;
+  }
+
+  &.is-error {
+    @apply .bg-red-lightest;
+
+   &::placeholder {
+      @apply .text-red-lightest;
+    }
+  }
+
+  &:focus {
+     &::placeholder {
+      @apply .text-grey;
+    }
+
+    &.is-error {
+      @apply .bg-red-lightest;
+
+       &::placeholder {
+        @apply .text-red;
+      }
+    }
+  }
+}
+
+.input__label--yoko {
+  @apply .w-full;
+  position: absolute;
+  bottom:100%;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate(1em, 3.2rem);
+  transition: transform 0.25s ;
+  transition-timing-function: ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   @apply .text-sm;
+
+  .no-js & {
+    transform: translate3d(1em, 0.8em, 0);
+  }
+}
+
+.input__label--yoko--select {
+  transform: translate3d(0, 100%, 0);
+
+}
+
+.input__label-content--yoko {
+  transition: transform 0.25s;
+  transition-timing-function: ease-in-out;
+}
+
+.input__label-content--yoko::after {
+  content: attr(data-content);
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  @apply .font-semibold;
+  @apply .text-xs;
+  @apply .tracking-wide;
+  @apply .uppercase;
+}
+
+.input__field--yoko:focus + .input__label--yoko,
+.is-filled .input__label--yoko {
+  transform: translate3d(0, 1.1em, 0);
+  @apply .p-0;
+}
+
+.input__field--yoko:focus + .input__label--yoko .input__label-content--yoko,
+.is-filled .input__label-content--yoko {
+  transform: translate3d(0, 100%, 0);
+}
+
+// .is-filled .input__label--yoko {
+//   @apply .text-green;
+// }
+
+// .is-filled .input__field--yoko:not(.is-error) {
+//   @apply .border-green;
+//   @apply .bg-green-lightest-25;
+// }
+
+// STYLES WHEN FOCUS AND FILleD
+// .is-filled .input__field--yoko:focus {
+//   @apply .border-blue;
+//   @apply .bg-white;
+// }
+
+.input__field--yoko:focus  + .input__label--yoko {
+   @apply .text-blue;
+ }
+
+ // ERRORS
+//  .is-error .input__field--yoko:focus {
+//   @apply .border-red;
+// }
+
+ // .is-error .input__field--yoko  + .input__label--yoko {
+ //   @apply .text-red;
+ // }
+
+.input__label-content {
+  display: block;
+}
+
+.input__label--yoko--select {
+  @apply .block;
+  @apply .font-semibold;
+  @apply .text-xs;
+  @apply .tracking-wide;
+  @apply .uppercase;
+}
+
+

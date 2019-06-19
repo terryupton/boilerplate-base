@@ -1,0 +1,32 @@
+{
+  "paths": {
+    "src": {
+      "base": "./src/",
+      "js": "./src/js/",
+      "sass": "./src/sass/",
+      "img": "./src/img/",
+      "svg": "./src/svg/"
+    },
+    "build": {
+      "base": "./assets/",
+      "css": "./assets/css/",
+      "js": "./assets/js/",
+      "img": "./assets/img/",
+      "svg": "./assets/svg/"
+    },
+    "tailwind": {
+      "config": "./tailwind.config.js"
+    },
+    "templates": {
+      "base": "templates/"
+    }
+  },
+  "urls": {
+    "local": "https://bp-mix.loc",
+    "live": "https://www.domain.ext",
+    "critical": "https://www.domain.ext"
+  },
+  "purgecss": [
+    "templates/**/*.{html,twig}"
+  ]
+}
