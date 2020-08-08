@@ -38,10 +38,11 @@ mix
         postCss: [
             tailwindcss(settings.paths.tailwind.config),
             require('autoprefixer')({
-                browsers: [
-                    "last 2 versions",
-                    "IE 10"
-                ]
+                grid: "autoplace"
+            }),
+            require('postcss-pxtorem')({
+                propList: ['*'],
+                // propList: ['font', 'font-size', 'line-height', 'letter-spacing', 'width', 'height', 'max-width', 'min-width', 'max-height', 'min-height', 'margin-top', 'margin-left', 'margin-bottom', 'margin-right', 'padding-top', 'padding-left', 'padding-bottom', 'padding-right'],
             }),
             require('postcss-sorting')({
                 "properties-order": "alphabetical"
