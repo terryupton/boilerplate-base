@@ -13,6 +13,10 @@ module.exports = {
       whitelistPatterns: [/lazyload/, /grayscale-up/, /blur-up/],
     }
   },
+  theme: {
+    container: {
+      center: true,
+      padding: '1.5rem',
     },
     
     extend: {
