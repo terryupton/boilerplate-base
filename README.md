@@ -18,6 +18,7 @@ A Simple starter project by [Terry Upton (Amasci Crative Limited)](https://www.a
 
 ## Todo
 - [ ] Consider adding Alpine.js as default JavaScript framework.
+- [ ] Consider extending TailwindCSS preflight (`@layer base`) for the `framework.css` files - see [Extending Preflight](https://tailwindcss.com/docs/preflight)
 - [ ] Update TailwindCSS config to use presets and split into better management (brand, default css-grids).
 - [x] Replace Sass (scss) build with PostCSS
 - [x] Update Mix to version 6.
