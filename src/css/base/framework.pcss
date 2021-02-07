@@ -1,0 +1,46 @@
+html {
+    /* -- Font smoothing and ligatures */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: auto;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    box-sizing: border-box;
+    appearance: none;
+
+    /*height: 100%;*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.prose p {
+    @apply mb-6;
+    @apply text-lg;
+}
+
+/* ==========================================================================
+   SELECTION STYLING
+========================================================================== */
+/* This is used to change the highlight colour when selecting text.
+ * Nice bespoke touch to websites.
+ * Full article here: http://davidwalsh.name/css-selection
+ */
+
+::-moz-selection {
+    @apply text-white;
+    @apply bg-pink-500;
+    text-shadow: none;
+}
+
+::selection {
+    @apply text-white;
+    @apply bg-pink-500;
+    text-shadow: none;
+}

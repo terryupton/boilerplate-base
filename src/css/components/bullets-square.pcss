@@ -1,0 +1,18 @@
+// /* ==========================================================================
+//  CUSTOM BULLET LIST STYLES
+// ========================================================================== */
+
+.list-square li {
+    @apply relative;
+}
+
+.list-square li::before {
+     @apply w-3;
+     @apply h-3;
+     background-color: currentColor;
+     content: '';
+     display: inline-block;
+     position: absolute;
+     top: 0.4rem;
+     left: -1.5rem;
+ }
