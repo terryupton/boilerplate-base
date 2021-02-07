@@ -9,8 +9,6 @@ module.exports = {
       './src/**/*.js'
     ],
     
-    fontFamily: {
-      sans: ['Open Sans', 'sans-serif'],
     options: {
       whitelistPatterns: [/lazyload/, /grayscale-up/, /blur-up/],
     }
