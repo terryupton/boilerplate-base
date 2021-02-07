@@ -1,0 +1,36 @@
+.lazyload {
+    opacity: 0;
+}
+
+.no-js.lazyload {
+    display: none;
+}
+
+.lazyloading {
+    opacity: 0.25;
+}
+
+.lazyloaded {
+    will-change: opacity;
+    transition: opacity 400ms ease-in;
+}
+
+.blur-up {
+    filter: blur(5px);
+    transition: filter 400ms ease-in;
+    will-change: filter;
+}
+
+.blur-up.lazyloaded {
+    filter: blur(0);
+}
+
+.grayscale-up {
+    filter: grayscale(100%);
+    transition: filter 400ms ease-in;
+    will-change: filter;
+}
+
+.grayscale-up.lazyloaded {
+    filter: grayscale(0%);
+}
