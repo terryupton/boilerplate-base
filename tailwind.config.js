@@ -90,15 +90,12 @@ module.exports = {
       gridRowEnd: {
         '-1': '-1',
       },
+      
+      extend: {
+        // display: ['group-hover']
+        // translate: ['group-hover']
+      }
     }
-  },
-  variants: {
-    backgroundOpacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-    borderColor: ['responsive', 'hover', 'focus', 'group-hover'],
-    display: ['responsive', 'group-hover'],
-    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
-    translate: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-    boxShadow: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   corePlugins: {
     container: false,
