@@ -1,0 +1,37 @@
+/* ==========================================================================
+   XCLOAK STYLES
+  ==========================================================================
+
+   Handy helpers for controlling visibility of elements until AlpinJS has compiled.
+   https://github.com/alpinejs/alpine#x-cloak
+
+   Use Like:
+  <div x-cloak>
+    <h1>
+      <span class="x-cloak--inline">Loading...</span> <!-- Only displayed before compiling -->
+      <span class="x-cloak--hidden">{{ post.title }}</span> <!-- Hidden until compiling is finished -->
+    </h1>
+  </div>
+========================================================================== */
+
+@responsive {
+    [x-cloak] .x-cloak--block {
+        display: block;
+    }
+
+    [x-cloak] .x-cloak--inline {
+        display: inline;
+    }
+
+    [x-cloak] .x-cloak--inlineBlock {
+        display: inline-block;
+    }
+
+    [x-cloak] .x-cloak--hidden {
+        display: none;
+    }
+
+    [x-cloak] .x-cloak--invisible {
+        visibility: hidden;
+    }
+}

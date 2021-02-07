@@ -1,0 +1,37 @@
+/* ==========================================================================
+   VCLOAK STYLES
+  ==========================================================================
+
+   Handy helpers for controlling visibility of elements until Vue has compiled.
+   https://gist.github.com/adamwathan/3584d1904e4f4c36096f
+
+   Use Like:
+  <div v-cloak>
+    <h1>
+      <span class="v-cloak--inline">Loading...</span> <!-- Only displayed before compiling -->
+      <span class="v-cloak--hidden">{{ post.title }}</span> <!-- Hidden until compiling is finished -->
+    </h1>
+  </div>
+========================================================================== */
+
+@responsive {
+    [v-cloak] .v-cloak--block {
+        display: block;
+    }
+
+    [v-cloak] .v-cloak--inline {
+        display: inline;
+    }
+
+    [v-cloak] .v-cloak--inlineBlock {
+        display: inline-block;
+    }
+
+    [v-cloak] .v-cloak--hidden {
+        display: none;
+    }
+
+    [v-cloak] .v-cloak--invisible {
+        visibility: hidden;
+    }
+}
