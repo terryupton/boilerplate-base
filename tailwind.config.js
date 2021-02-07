@@ -91,10 +91,12 @@ module.exports = {
         '-1': '-1',
       },
       
-      extend: {
-        // display: ['group-hover']
-        // translate: ['group-hover']
-      }
+    }
+  },
+  variants: {
+    extend: {
+      // display: ['group-hover']
+      // translate: ['group-hover']
     }
   },
   corePlugins: {
