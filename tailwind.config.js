@@ -1,9 +1,20 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  purge: {
+    mode: 'all',
+    content: [
+      './templates/**/*.html',
+      './templates/**/*.php',
+      './src/**/*.js'
+    ],
     
     fontFamily: {
       sans: ['Open Sans', 'sans-serif'],
+    options: {
+      whitelistPatterns: [/lazyload/, /grayscale-up/, /blur-up/],
+    }
+  },
     },
     
     extend: {
