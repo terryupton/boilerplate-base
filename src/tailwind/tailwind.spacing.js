@@ -53,16 +53,16 @@ module.exports = {
         'flood': 'calc(50% - 50vw)'
       },
       
-      minWidth: {
+      minWidth: (theme) => ({
         ...theme('spacing'),
-      },
+      }),
       
-      maxWidth: {
+      maxWidth: (theme) => ({
         ...theme('spacing'),
         '7xl': '80rem',
         '8xl': '90rem',
         '9xl': '100rem',
-      },
+      }),
     }
   }
 };
