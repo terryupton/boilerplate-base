@@ -13,25 +13,26 @@
     </h1>
   </div>
 ========================================================================== */
+@layer utilities {
+    @responsive {
+        [x-cloak] .x-cloak--block {
+            display: block;
+        }
 
-@responsive {
-    [x-cloak] .x-cloak--block {
-        display: block;
-    }
+        [x-cloak] .x-cloak--inline {
+            display: inline;
+        }
 
-    [x-cloak] .x-cloak--inline {
-        display: inline;
-    }
+        [x-cloak] .x-cloak--inlineBlock {
+            display: inline-block;
+        }
 
-    [x-cloak] .x-cloak--inlineBlock {
-        display: inline-block;
-    }
+        [x-cloak] .x-cloak--hidden {
+            display: none;
+        }
 
-    [x-cloak] .x-cloak--hidden {
-        display: none;
-    }
-
-    [x-cloak] .x-cloak--invisible {
-        visibility: hidden;
+        [x-cloak] .x-cloak--invisible {
+            visibility: hidden;
+        }
     }
 }
