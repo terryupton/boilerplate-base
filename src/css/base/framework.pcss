@@ -14,17 +14,19 @@ html {
     scroll-behavior: smooth;
 }
 
-
+/*
 body {
     overflow-x: hidden;
     position: relative;
 }
+ */
 
-.prose p {
-    @apply mb-6;
-    @apply text-lg;
+@layer components {
+    .prose p {
+        @apply mb-6;
+        @apply text-lg;
+    }
 }
-
 /* ==========================================================================
    SELECTION STYLING
 ========================================================================== */
