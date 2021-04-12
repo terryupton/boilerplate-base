@@ -1,6 +1,7 @@
 const theme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+  presets: [],
   theme: {
     extend: {
       spacing: {
@@ -13,7 +14,8 @@ module.exports = {
         '25': '6.25rem',
         '30': '7.5rem',
         '36': '9rem',
-        '76': '19rem',
+        '50': '12.5rem', //200px
+        '76': '19rem',  //304px
         '80': '20rem',
         '84': '21rem',
         '88': '22rem',

@@ -6,6 +6,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
+  presets: [],
   theme: {
     fontFamily: {
       sans: ['Open Sans', 'sans-serif'],

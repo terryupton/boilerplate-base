@@ -1,5 +1,6 @@
 module.exports = {
   presets: [
+    require('tailwindcss/defaultConfig'),
     // require('./src/tailwind/tailwind.brand.js'),
     // require('./src/tailwind/tailwind.project.js'),
     require('./src/tailwind/tailwind.colors.js'),
@@ -17,7 +18,7 @@ module.exports = {
     ],
     
     options: {
-      whitelistPatterns: [/lazyload/, /grayscale-up/, /blur-up/],
+      safelist: [/lazyload/, /grayscale-up/, /blur-up/],
     }
   },
   theme: {

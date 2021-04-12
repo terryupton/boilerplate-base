@@ -1,13 +1,14 @@
 module.exports = {
+  presets: [],
   theme: {
     extend: {
       colors: {
         social: {
-          'twitter': '#00ACED',
-          'facebook': '#3B5998',
-          'instagram': '#C13584',
-          'linkedin': '#007BB6',
-          'youtube': '#BB0000',
+          'twitter': '#00aced',
+          'facebook': '#3b5998',
+          'instagram': '#c13584',
+          'linkedin': '#007bb6',
+          'youtube': '#bb0000',
           'email': '#a0aec0'
         },
         
@@ -15,7 +16,7 @@ module.exports = {
           'doc': '#295595',
           'xls': '#207245',
           'ppt': '#ca4935',
-          'pdf': '#FB3449',
+          'pdf': '#fb3449',
         }
       }
     }
